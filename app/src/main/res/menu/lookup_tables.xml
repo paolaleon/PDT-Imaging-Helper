@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/redChannel"
+        android:title="Extract Red Channel" />
+    <item android:id="@+id/sixteenColors"
+        android:title="Apply LUT: 16 Colors" />
+    <item android:id="@+id/contrast"
+        android:title="Adjust Contrast..." />
+    <item android:id="@+id/brightness"
+        android:title="Adjust Brightness..." />
+</menu>

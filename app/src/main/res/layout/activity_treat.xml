@@ -1,0 +1,109 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/promptTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:text="Select an applicator to begin treatment"
+        android:textColor="#3F51B5"
+        style="@style/CustomText" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/typeITextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Type I"
+            android:layout_marginRight="100dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="35dp"
+            style="@style/CustomText" />
+
+        <TextView
+            android:id="@+id/typeIITextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/typeITextView"
+            android:layout_marginBottom="20dp"
+            android:text="Type II"
+            style="@style/CustomText" />
+
+        <TextView
+            android:id="@+id/typeIIITextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/typeIAppButton"
+            android:text="Type III"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="95dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="30dp"
+            style="@style/CustomText" />
+
+        <TextView
+            android:id="@+id/typeIVTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/typeIIAppButton"
+            android:layout_toRightOf="@id/typeIIITextView"
+            android:text="Type IV"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="20dp"
+            style="@style/CustomText" />
+
+        <ImageButton
+            android:id="@+id/typeIAppButton"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_below="@id/typeITextView"
+            android:scaleType="fitXY"
+            android:src="@drawable/app2"
+            android:layout_marginRight="40dp"
+            android:onClick="treatDetail"
+            android:background="@android:color/transparent"/>
+
+        <ImageButton
+            android:id="@+id/typeIIAppButton"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_below="@id/typeIITextView"
+            android:layout_toRightOf="@id/typeIAppButton"
+            android:src="@drawable/app1"
+            android:scaleType="fitXY"
+            android:onClick="treatDetail"
+            android:background="@android:color/transparent" />
+
+        <ImageButton
+            android:id="@+id/typeIIIAppButton"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_below="@id/typeIIITextView"
+            android:scaleType="fitXY"
+            android:src="@drawable/app3"
+            android:layout_marginRight="40dp"
+            android:onClick="treatDetail"
+            android:background="@android:color/transparent"/>
+
+        <ImageButton
+            android:id="@+id/typeIVAppButton"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_below="@id/typeIVTextView"
+            android:layout_toRightOf="@id/typeIIIAppButton"
+            android:scaleType="fitXY"
+            android:src="@drawable/app4"
+            android:onClick="treatDetail"
+            android:background="@android:color/transparent"/>
+    </RelativeLayout>
+
+</LinearLayout>

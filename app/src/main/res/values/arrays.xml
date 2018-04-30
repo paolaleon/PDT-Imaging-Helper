@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sex_array">
+        <item>@string/sex_undefined</item>
+        <item>@string/sex_male</item>
+        <item>@string/sex_female</item>
+    </string-array>
+</resources>

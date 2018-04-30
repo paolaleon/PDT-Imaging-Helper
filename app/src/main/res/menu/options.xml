@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/capturing"
+        android:title="Capturing Image"/>
+    <item android:id="@+id/importing"
+        android:title="Importing Image" />
+</menu>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">PDT Imaging Helper</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="sex_spinner">Sex</string>
+
+    <string name="sex_male">Male</string>
+
+    <string name="sex_female">Female</string>
+
+    <string name="sex_undefined">Select an Option</string>
+
+
+</resources>

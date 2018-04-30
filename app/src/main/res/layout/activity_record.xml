@@ -1,0 +1,116 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/overview_TV"
+            android:text="Overview"
+            style="@style/CustomText"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="20dp"
+            android:textColor="#3F51B5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/name_ET"
+            android:hint="Name"
+            android:layout_margin="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/overview_TV"
+            android:inputType="textCapWords" />
+
+
+        <EditText
+            android:id="@+id/birthdate_ET"
+            android:hint="Birthdate (MM/DD/YYYY)"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="90dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name_ET"
+            android:inputType="text" />
+
+        <Spinner
+            android:id="@+id/sex_SP"
+            android:layout_below="@id/birthdate_ET"
+            android:layout_marginLeft="90dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </Spinner>
+
+        <TextView
+            android:id="@+id/medicalHistory_TV"
+            android:text="Medical History"
+            android:layout_below="@id/sex_SP"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#3F51B5"
+            style="@style/CustomText"/>
+
+        <EditText
+            android:id="@+id/medicalHistory_ET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/medicalHistory_TV"
+            android:inputType="textCapSentences"
+            android:maxLines="100" />
+
+        <Button
+            android:id="@+id/save_BT"
+            android:onClick="save"
+            android:text="Save Record"
+            android:layout_below="@id/medicalHistory_ET"
+            android:layout_marginTop="20dp"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/delete_BT"
+            android:onClick="delete"
+            android:text="Delete Record"
+            android:visibility="invisible"
+            android:layout_below="@+id/save_BT"
+            android:layout_marginTop="10dp"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/diagnose_BT"
+            android:onClick="openDiagnoseMenu"
+            android:text="Analyze Patient"
+            android:layout_below="@+id/delete_BT"
+            android:layout_marginTop="10dp"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/treat_BT"
+            android:onClick="openTreat"
+            android:text="Treat Patient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/diagnose_BT"
+            android:layout_alignBottom="@+id/diagnose_BT"
+            android:layout_alignEnd="@+id/birthdate_ET"
+            android:padding="10dp"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+</ScrollView>

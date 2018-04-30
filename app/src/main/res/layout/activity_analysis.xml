@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:id="@+id/rl">
+
+    <ImageView
+        android:id="@+id/rawImage"
+        android:padding="10dp"
+        android:scaleType="centerInside"
+        android:adjustViewBounds="true"
+        android:layout_width="match_parent"
+        android:layout_below="@id/contrastSeekBar"
+        android:layout_height="400dp" />
+
+    <Button
+        android:id="@+id/modifyImageButton"
+        android:text="Customize Image"
+        android:layout_below="@id/rawImage"
+        android:layout_width="250dp"
+        android:layout_height="140dp"
+        android:onClick="customizeOptions"/>
+
+    <Button
+        android:id="@+id/saveButton"
+        android:text="Save"
+        android:layout_gravity="center_horizontal"
+        android:layout_toRightOf="@id/modifyImageButton"
+        android:layout_below="@id/rawImage"
+        android:layout_width="160dp"
+        android:layout_height="140dp"
+        android:onClick="saveImageOptions" />
+
+    <SeekBar
+        android:id="@+id/contrastSeekBar"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_margin="20dp"
+        android:max="200"
+        android:visibility="invisible"
+        android:layout_height="wrap_content" />
+
+    <SeekBar
+        android:id="@+id/brightnessSeekBar"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:max="100"
+        android:layout_margin="20dp"
+        android:visibility="invisible"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

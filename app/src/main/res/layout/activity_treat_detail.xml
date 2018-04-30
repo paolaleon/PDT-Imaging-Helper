@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#3F51B5"
+        android:text="Area of the lesion:"
+        style="@style/CustomText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="2 cm^2"
+        android:layout_marginLeft="10dp"
+        style="@style/CustomText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Treatment time:"
+        android:layout_marginLeft="10dp"
+        android:textColor="#3F51B5"
+        style="@style/CustomText" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/treatmentTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:34:54"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            style="@style/CustomText" />
+
+        <Button
+            android:id="@+id/timerStart"
+            android:layout_below="@id/treatmentTime"
+            android:padding="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_width="200dp"
+            android:onClick="startTimer"
+            android:text="Start Treatment"
+            android:backgroundTint="#81C784"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/timerStop"
+            android:layout_below="@id/timerStart"
+            android:padding="20dp"
+            android:layout_width="200dp"
+            android:layout_marginStart="10dp"
+            android:onClick="cancelTreatment"
+            android:text="Cancel Treatment"
+            android:backgroundTint="#EF5350"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</LinearLayout>
